@@ -15,20 +15,8 @@ Single-colored icons can be modified like so:
 }
 ========================================== */
 
-.envelopehover {
-  width: 1.3330078125em;
-}
-
-.smartphonehover {
-  width: 0.6669921875em;
-}
-
 .smartphone {
   width: 0.6669921875em;
-}
-
-.Rectangle1 {
-  width: 2.25em;
 }
 
 .logo-6 {
@@ -55,14 +43,6 @@ Single-colored icons can be modified like so:
   width: 0.900390625em;
 }
 
-.imgoverlay {
-  width: 2.6669921875em;
-}
-
 .envelope {
   width: 1.3330078125em;
-}
-
-.bg {
-  width: 5.2861328125em;
 }

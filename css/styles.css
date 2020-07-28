@@ -538,6 +538,7 @@ ul {
 }
 .footer-text-title {
   color: var(--secondary-text-color);
+  padding-top: 9px;
   font-size: 14px;
   line-height: 1.8;
 }
@@ -549,9 +550,9 @@ ul {
   font-size: 14px;
   line-height: 24px;
   letter-spacing: 0.03em;
-  color: rgba(255, 255, 255, 0.6);
-  margin-top: 10px;
-  margin-left: 214px;
+  margin-top: 20px;
+  margin-bottom: 0px;
+  width: 231px;
 }
 
 .list-item {
@@ -569,7 +570,6 @@ ul {
 }
 .section-footer {
   display: flex;
-  justify-content: flex-start;
 }
 
 .footer-text {
@@ -578,8 +578,69 @@ ul {
   letter-spacing: 0.03em;
 }
 
+.newsletter {
+  display: flex;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #ffffff;
+  margin-top: 72px;
+  margin-left: 94px;
+}
+
+.newslater-email {
+  display: flex;
+  position: absolute;
+  padding-top: 15px;
+  padding-left: 16px;
+  margin-left: 94px;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+  width: 358px;
+  height: 50px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-sizing: border-box;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  background: #2f303a;
+}
+
+.button-newslater {
+  color: var(--white-text-color);
+  background-color: var(--akcent);
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 1.8;
+  border-radius: 4px;
+  min-width: 130px;
+  width: 200px;
+  height: 50px;
+  margin-left: 464px;
+  letter-spacing: 0.06em;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+
+.button-newslater:hover,
+.button-newslater:focus {
+  color: var(--white-text-color);
+  background-color: var(--akcent);
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.12), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 3px 1px rgba(0, 0, 0, 0.1);
+}
+
 .logo-footer-top {
-  margin-top: 54px;
+  margin-top: 60px;
+  margin-left: 230px;
+  margin-bottom: 60px;
 }
 
 .logo-footer {
@@ -593,7 +654,6 @@ ul {
   font-size: 22px;
   line-height: 26px;
   letter-spacing: 0.03em;
-  margin-left: 214px;
 }
 
 .logo-footer-color {
@@ -614,7 +674,7 @@ ul {
 .social-contact {
   color: var(--white-text-color);
   margin-left: 69px;
-  margin-top: 56px;
+  margin-top: 72px;
 }
 
 .about-profession {
