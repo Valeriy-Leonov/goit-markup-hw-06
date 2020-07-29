@@ -38,6 +38,20 @@ ul {
   list-style-type: none;
   text-decoration: none;
 }
+
+.backdrop {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.2);
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
 .button-close {
   position: absolute;
   top: 0;
@@ -56,10 +70,6 @@ ul {
   cursor: pointer;
   outline: none;
 }
-
-.button-close:hover {
-  fill: var(--akcent);
-}
 .text-madal {
   display: block;
   margin-bottom: 30px;
@@ -70,6 +80,13 @@ ul {
   line-height: 23px;
   text-align: center;
   letter-spacing: 0.03em;
+  color: black;
+  color: #000 !important;
+  text-decoration: none;
+}
+
+.button-close:hover {
+  fill: var(--akcent);
 }
 
 .form {
@@ -81,7 +98,7 @@ ul {
     0px 1px 3px rgba(0, 0, 0, 0.12);
   border-radius: 4px;
   padding: 40px;
-  margin-top: 221px;
+
   left: 50%;
   transform: translate(-50%);
   transition-property: all;
@@ -115,11 +132,7 @@ ul {
 }
 .form-label:focus,
 :hover {
-  letter-spacing: 0.01em;
   color: #2196f3;
-  transition-property: all;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .form-input {
@@ -175,44 +188,42 @@ ul {
 }
 
 .comment-field {
-  display: flex;
+  position: relative;
 }
 
-.comment-imput {
-  height: 120px;
+.comment-input {
+  position: relative;
   width: 448px;
+  height: 120px;
+  padding: 12px 16px;
+  resize: none;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   outline: none;
-  padding-top: 12px;
-  padding-left: 16px;
 }
 
 .comment-label {
+  position: absolute;
+  top: 16%;
+  left: 16px;
+  transform: translateY(-50%);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   font-size: 14px;
   line-height: 16px;
+  letter-spacing: 0.01em;
   color: #757575;
-  padding-top: 12px;
-  padding-left: 16px;
-  position: absolute;
-  transition-property: all;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.comment-input:hover + .comment-label,
+.comment-input:focus + .comment-label,
 .comment-input:not(:placeholder-shown) + .comment-label {
-  transform: translateY(-30px);
-
-  font-style: normal;
-  font-weight: normal;
+  transform: translateY(-40px);
+  color: var(--accent-color);
   font-size: 12px;
   line-height: 14px;
   letter-spacing: 0.01em;
 }
 
-.comment-input:focus,
-.comment-input:hover {
+.comment-input:focus {
   border-color: var(--akcent);
 }
 

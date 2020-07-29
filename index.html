@@ -18,6 +18,7 @@
     
     </head>
   <body class="page">
+    <div class="backdrop">
     <form class="form" autocomplete="off">
       <button class="button-close">
         <svg width="18px" height="18px">
@@ -44,7 +45,7 @@
       </label>
     
       <label class="form-field">
-        <input type="mail" class="form-input" name="mail" placeholder=" " />
+        <input type="email" class="form-input" name="mail" placeholder=" " />
         <span class="form-label">Почта</span>
         <span class="icon">
           <svg width="18px" height="18px">
@@ -52,7 +53,12 @@
           </svg>
         </span>
       </label>
+      <div class="comment-field">
+        <textarea name="comment" id="comment" rows="8" class="comment-input" placeholder=" "></textarea>
+        <label for="comment" class="comment-label">Комментарий</label>
+      </div>
     </form>
+    </div>
     <div class="box-container">
       <!--шапка-->
 
