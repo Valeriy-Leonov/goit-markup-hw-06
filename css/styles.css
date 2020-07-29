@@ -38,9 +38,43 @@ ul {
   list-style-type: none;
   text-decoration: none;
 }
+.button-close {
+  position: absolute;
+  top: 0;
+  right: 0;
+  transform: translate(-8px, 8px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: none;
+  background: #ffffff;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  box-sizing: border-box;
+  cursor: pointer;
+  outline: none;
+}
+
+.button-close:hover {
+  fill: var(--akcent);
+}
+.text-madal {
+  display: block;
+  margin-bottom: 30px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 23px;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
 
 .form {
   position: absolute;
+  width: 528px;
   height: 581px;
   background: #ffffff;
   box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14),
@@ -50,22 +84,23 @@ ul {
   margin-top: 221px;
   left: 50%;
   transform: translate(-50%);
+  transition-property: all;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .form-field {
   position: relative;
+  display: block;
   margin-bottom: 28px;
-  width: 448px;
 }
+
 .form-field:focus {
-  fill: var(--akcent);
+  border: 1px solid var(--accent-color);
+  outline: none;
 }
 
 .form-label {
-  font-size: 14px;
-  line-height: 16px;
-  letter-spacing: 0.01em;
-  color: #757575;
   position: absolute;
   top: 50%;
   left: 42px;
@@ -73,53 +108,70 @@ ul {
   transition-property: all;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  margin: 0;
-  padding: 0;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.01em;
+  color: #757575;
+}
+.form-label:focus,
+:hover {
+  letter-spacing: 0.01em;
+  color: #2196f3;
+  transition-property: all;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.form-imput {
+.form-input {
+  width: 100%;
   margin: 0;
-  padding: 10px 42px;
-  font: inherit;
   width: 448px;
+  height: 40px;
+  padding-left: 42px;
+  font: inherit;
   border: 1px solid rgba(33, 33, 33, 0.2);
+  box-sizing: border-box;
   border-radius: 4px;
   outline: none;
 }
+.form-input:focus {
+  height: 40px;
+  border: 1px solid #2196f3;
 
-.form-imput:focus,
-.form-imput:hover {
-  border-color: var(--akcent);
-}
-
-.form-imput:hover + .form-label,
-.form-imput:not(:placeholder-shown) + .form-label {
-  transform: translateY(-40px);
-  color: var(--akcent);
-  font-style: normal;
-  font-weight: normal;
-  font-size: 12px;
-  line-height: 14px;
-  letter-spacing: 0.01em;
+  border-radius: 4px;
+  transition-property: all;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .icon {
   position: absolute;
-  transform: translateY(-50%);
-  top: 50%;
-  left: 16px;
-  display: inline-block;
-  width: 18px;
-  height: 18px;
+  top: 25%;
+  margin-left: 17px;
+  display: block;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.form-imput:focus,
-:hover ~ .icon {
+.icon:focus,
+.icon:hover {
   fill: var(--akcent);
 }
 
-textarea {
-  resize: none;
+.form-field:focus-within > .icon {
+  fill: var(--akcent);
+}
+.form-field:focus-within > .form-label {
+  transform: translate(-25px, -40px);
+  color: var(--accent-color);
+  font-size: 12px;
+  line-height: 14px;
+}
+
+.form-input:not(:placeholder-shown) + .form-label {
+  transform: translate(-25px, -40px);
+  font-size: 12px;
+  line-height: 14px;
 }
 
 .comment-field {
@@ -148,10 +200,10 @@ textarea {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.comment-imput:hover + .comment-label,
-.comment-imput:not(:placeholder-shown) + .comment-label {
+.comment-input:hover + .comment-label,
+.comment-input:not(:placeholder-shown) + .comment-label {
   transform: translateY(-30px);
-  color: var(--akcent);
+
   font-style: normal;
   font-weight: normal;
   font-size: 12px;
@@ -159,8 +211,8 @@ textarea {
   letter-spacing: 0.01em;
 }
 
-.comment-imput:focus,
-.comment-imput:hover {
+.comment-input:focus,
+.comment-input:hover {
   border-color: var(--akcent);
 }
 

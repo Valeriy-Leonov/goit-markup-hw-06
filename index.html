@@ -13,40 +13,45 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/0.6.0/modern-normalize.min.css"
     />
     <link rel="stylesheet" href="./css/styles.css" />
+
+    
+    
     </head>
   <body class="page">
     <form class="form" autocomplete="off">
-      <h1 class="form-section">Оставьте свои данные, мы вам перезвоним</h1>
-
-     <div class="form-field">
-       <input type="text" class="form-imput" name="name" id="name" placeholder=" ">
-       <label for="name" class="form-label">Имя</label>
-       <span class="icon"> <svg width="18px" height="18px">
-       <use href="./images/symbol-defs.svg#person-black-18dp-1"></use>
-       </svg> </span>
-     </div>
-
-     <div class="form-field">
-       <input type="text" class="form-imput" name="name" id="name" placeholder=" ">
-       <label for="name" class="form-label">Телефон</label>
-       <span class="icon"> <svg width="18px" height="18px">
-       <use href="./images/symbol-defs.svg#phone-black-18dp-1"></use>
-       </svg> </span>
-     </div>
-
-     <div class="form-field">
-       <input type="text" class="form-imput" name="name" id="name" placeholder=" ">
-       <label for="name" class="form-label">Почта</label>
-       <span class="icon"> <svg width="18px" height="18px">
-       <use href="./images/symbol-defs.svg#email-black-18dp-1"></use>
-       </svg> </span>
-     </div>
-
-     <div class="comment-field">
-       <textarea name="comment" id="comment" rows="10" class="comment-imput" placeholder=" "></textarea>
-       <label for="comment" class="comment-label">Комментарий</label>
-     </div>
-
+      <button class="button-close">
+        <svg width="18px" height="18px">
+          <use href="./images/symbol-defs.svg#close-black-18dp-2-1"></use>
+        </svg>
+      </button>
+      <h1 class="text-madal">Оставьте свои данные, мы вам перезвоним</h1>
+      <label class="form-field">
+        <input type="text" class="form-input" name="name" placeholder=" " />
+        <span class="form-label">Имя</span>
+        <span class="icon">
+          <svg width="18px" height="18px">
+            <use href="./images/symbol-defs.svg#person-black-18dp-1"></use>
+          </svg>
+        </span>
+      </label>
+    
+      <label class="form-field">
+        <input type="tel" class="form-input" name="tel" placeholder=" " />
+        <span class="form-label">Телефон</span>
+        <span class="icon"><svg width="18px" height="18px">
+            <use href="./images/symbol-defs.svg#phone-black-18dp-1"></use>
+          </svg></span>
+      </label>
+    
+      <label class="form-field">
+        <input type="mail" class="form-input" name="mail" placeholder=" " />
+        <span class="form-label">Почта</span>
+        <span class="icon">
+          <svg width="18px" height="18px">
+            <use href="./images/symbol-defs.svg#email-black-18dp-1"></use>
+          </svg>
+        </span>
+      </label>
     </form>
     <div class="box-container">
       <!--шапка-->
