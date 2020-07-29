@@ -226,18 +226,9 @@ ul {
   border-color: var(--akcent);
 }
 
-.checkbox-label::after {
-  content: "";
-  display: inline-block;
-  width: 20px;
-  height: 20px;
-  background-color: tomato !important;
-  text-decoration: none;
-  position: absolute;
-  font-size: 14px;
-  line-height: 24px;
-  letter-spacing: 0.03em;
-  color: #757575;
+.checkbox-label {
+  color: #000 !important;
+  margin-top: 20px;
 }
 
 .checkbox:checked .checkbox {
@@ -247,7 +238,23 @@ ul {
   position: absolute;
 }
 
-.checkbox-icon .form-section {
+.checkbox-icon {
+  color: #757575;
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background-color: tomato;
+
+  position: absolute;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+}
+
+.checkbox:checked + .checkbox-icon {
+  background-color: blue;
+}
+.form-section {
   padding-bottom: 30px;
   font-size: 20px;
   line-height: 23px;
