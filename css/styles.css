@@ -98,7 +98,6 @@ ul {
     0px 1px 3px rgba(0, 0, 0, 0.12);
   border-radius: 4px;
   padding: 40px;
-
   left: 50%;
   transform: translate(-50%);
   transition-property: all;
@@ -225,6 +224,27 @@ ul {
 
 .comment-input:focus {
   border-color: var(--akcent);
+}
+
+.checkbox-label::after {
+  content: "";
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background-color: tomato !important;
+  text-decoration: none;
+  position: absolute;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  color: #757575;
+}
+
+.checkbox:checked .checkbox {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  position: absolute;
 }
 
 .form-section {
