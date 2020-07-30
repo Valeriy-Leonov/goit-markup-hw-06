@@ -112,7 +112,7 @@ ul {
 }
 
 .form-field:focus {
-  border: 1px solid var(--accent-color);
+  border: 1px solid var(--akcent);
   outline: none;
 }
 
@@ -175,7 +175,7 @@ ul {
 }
 .form-field:focus-within > .form-label {
   transform: translate(-25px, -40px);
-  color: var(--accent-color);
+  color: var(--akcent);
   font-size: 12px;
   line-height: 14px;
 }
@@ -216,7 +216,7 @@ ul {
 .comment-input:focus + .comment-label,
 .comment-input:not(:placeholder-shown) + .comment-label {
   transform: translateY(-40px);
-  color: var(--accent-color);
+  color: var(--akcent);
   font-size: 12px;
   line-height: 14px;
   letter-spacing: 0.01em;
@@ -229,6 +229,22 @@ ul {
 .checkbox-label {
   color: #000 !important;
   margin-top: 20px;
+  width: 100%;
+  display: block;
+  text-align: center;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  color: #757575;
+}
+
+.checkbox-check {
+  text-decoration-line: underline;
+  color: var(--akcent) !important;
+  font-size: 14px;
+  line-height: 24px;
+  margin-left: 3px;
+  text-decoration: none;
 }
 
 .checkbox:checked .checkbox {
@@ -241,10 +257,11 @@ ul {
 .checkbox-icon {
   color: #757575;
   display: inline-block;
-  width: 20px;
-  height: 20px;
+  width: 16px;
+  height: 15px;
   background-color: tomato;
-
+  border: 2px solid #2a2a2a;
+  border-radius: 4px;
   position: absolute;
   font-size: 14px;
   line-height: 24px;
