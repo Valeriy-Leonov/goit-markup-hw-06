@@ -13,58 +13,61 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/0.6.0/modern-normalize.min.css"
     />
     <link rel="stylesheet" href="./css/styles.css" />
-
-    
-    
-    </head>
+  </head>
   <body class="page">
     <div class="backdrop is-hidden" data-modal>
-    <form class="form" autocomplete="off">
-      <button class="button-close">
-        <svg width="18px" height="18px">
-          <use href="./images/symbol-defs.svg#close-black-18dp-2-1"></use>
-        </svg>
-      </button>
-      <h1 class="text-madal">Оставьте свои данные, мы вам перезвоним</h1>
-      <label class="form-field">
-        <input type="text" class="form-input" name="name" placeholder=" " />
-        <span class="form-label">Имя</span>
-        <span class="icon">
+      <form class="form" autocomplete="off">
+        <button class="button-close">
           <svg width="18px" height="18px">
-            <use href="./images/symbol-defs.svg#person-black-18dp-1"></use>
+            <use href="./images/symbol-defs.svg#close-black-18dp-2-1"></use>
           </svg>
-        </span>
-      </label>
-    
-      <label class="form-field">
-        <input type="tel" class="form-input" name="tel" placeholder=" " />
-        <span class="form-label">Телефон</span>
-        <span class="icon"><svg width="18px" height="18px">
-            <use href="./images/symbol-defs.svg#phone-black-18dp-1"></use>
-          </svg></span>
-      </label>
-    
-      <label class="form-field">
-        <input type="email" class="form-input" name="mail" placeholder=" " />
-        <span class="form-label">Почта</span>
-        <span class="icon">
-          <svg width="18px" height="18px">
-            <use href="./images/symbol-defs.svg#email-black-18dp-1"></use>
-          </svg>
-        </span>
-      </label>
-      <div class="comment-field">
-        <textarea name="comment" id="comment" rows="8" class="comment-input" placeholder=" "></textarea>
-        <label for="comment" class="comment-label">Комментарий</label>
-      </div>
-      <label class="checkbox-label">
-        <input class="checkbox" type="checkbox" name="topick" value="css" >
-        <span class="checkbox-icon"></span>  Соглашаюсь с рассылкой и принимаю
-        <a href="договор" class="checkbox-check">  Условия договора </a>
-        
-      </label>
-      <button class="button-modal" data-modal-close>Отправить</button>
-    </form>
+        </button>
+        <h1 class="text-madal">Оставьте свои данные, мы вам перезвоним</h1>
+        <label class="form-field">
+          <input type="text" class="form-input" name="name" placeholder=" " />
+          <span class="form-label">Имя</span>
+          <span class="icon">
+            <svg width="18px" height="18px">
+              <use href="./images/symbol-defs.svg#person-black-18dp-1"></use>
+            </svg>
+          </span>
+        </label>
+
+        <label class="form-field">
+          <input type="tel" class="form-input" name="tel" placeholder=" " />
+          <span class="form-label">Телефон</span>
+          <span class="icon">
+            <svg width="18px" height="18px">
+              <use href="./images/symbol-defs.svg#phone-black-18dp-1"></use>
+            </svg>
+          </span>
+        </label>
+        <label class="form-field">
+          <input type="email" class="form-input" name="mail" placeholder=" " />
+          <span class="form-label">Почта</span>
+          <span class="icon">
+            <svg width="18px" height="18px">
+              <use href="./images/symbol-defs.svg#email-black-18dp-1"></use>
+            </svg>
+          </span>
+        </label>
+        <div class="comment-field">
+          <textarea
+            name="comment"
+            id="comment"
+            rows="8"
+            class="comment-input"
+            placeholder=" "
+          ></textarea>
+          <label for="comment" class="comment-label">Комментарий</label>
+        </div>
+        <label class="checkbox-label">
+          <input class="checkbox" type="checkbox" name="topick" value="css" />
+          <span class="checkbox-icon"></span> Соглашаюсь с рассылкой и принимаю
+          <a href="договор" class="checkbox-check"> Условия договора </a>
+        </label>
+        <button class="button-modal" data-modal-close>Отправить</button>
+      </form>
     </div>
     <div class="box-container">
       <!--шапка-->
@@ -424,15 +427,14 @@
             <b class="newsletter"> Подпишитесь на рассылку</b>
             <br />
             <span class="newslater-email">E-mail</span>
-                <a href="" class="button-newslater"
-                >Подписаться  
-                <span class="newslater-telegram">
+            <a href="" class="button-newslater"
+              >Подписаться
+              <span class="newslater-telegram">
                 <svg width="24px" height="24px">
                   <use href="./images/symbol-defs.svg#icon-send-1"></use>
                 </svg>
-                </span>
-              </a>
-            </div>
+              </span>
+            </a>
           </div>
         </div>
       </footer>
