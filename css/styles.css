@@ -89,6 +89,11 @@ ul {
   fill: var(--akcent);
 }
 
+.backdrop > form {
+  max-height: 100%;
+  overflow: auto;
+}
+
 .form {
   position: absolute;
   width: 528px;
@@ -227,10 +232,11 @@ ul {
 }
 
 .checkbox-label {
-  color: #000 !important;
+  padding-left: 12px;
+  width: 448px;
   margin-top: 20px;
-  width: 100%;
-  display: block;
+  display: flex;
+  align-items: center;
   text-align: center;
   font-size: 14px;
   line-height: 24px;
@@ -247,7 +253,7 @@ ul {
   text-decoration: none;
 }
 
-.checkbox:checked .checkbox {
+.checkbox {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
@@ -257,19 +263,23 @@ ul {
 .checkbox-icon {
   color: #757575;
   display: inline-block;
-  width: 16px;
-  height: 15px;
-  background-color: tomato;
+  margin-right: 7px;
   border: 2px solid #2a2a2a;
-  border-radius: 4px;
-  position: absolute;
+  width: 15px;
+  height: 15px;
+  border: 2px solid #2a2a2a;
+  border-radius: 2px;
   font-size: 14px;
   line-height: 24px;
   letter-spacing: 0.03em;
 }
 
 .checkbox:checked + .checkbox-icon {
-  background-color: blue;
+  background-color: var(--akcent);
+  background-size: contain;
+  background-image: url("../images/icon-check.svg");
+  background-origin: border-box;
+  border-color: var(--akcent);
 }
 .form-section {
   padding-bottom: 30px;
